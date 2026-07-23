@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+
+:root {
+
+  --background: #1512a5;
+
+  --foreground: #171717;
+
+}
+
+
+
+html,
+body {
+
+  min-height: 100%;
+
+}
+
+
+
+body {
+
+  background: var(--background);
+
+  color: var(--foreground);
+
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+* {
+
+  box-sizing: border-box;
+
+}
+
+
+
+table {
+
+  border-collapse: collapse;
+
+  width: 100%;
+
+}
+
+
+
+button {
+
+  cursor: pointer;
+
+}
+
+
+
+input,
+textarea,
+select {
+
+  outline: none;
+
+}
+
+
+
+a {
+
+  text-decoration: none;
+
+}
