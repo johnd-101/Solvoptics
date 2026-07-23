@@ -87,7 +87,6 @@ export default async function DashboardPage() {
       <div className="rounded-2xl bg-white p-6 shadow-xl">
         <StatusChart
           title="Support Calls by Status"
-          link={"/dashboard/charts"}
           data={chartData}
           color="#2563EB"
         />
