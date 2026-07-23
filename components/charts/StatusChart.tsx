@@ -1,7 +1,5 @@
 "use client";
 
-
-
 import {
   ResponsiveContainer,
   BarChart,
@@ -20,19 +18,19 @@ interface ChartData {
 
 interface StatusChartProps {
   title: string;
+  link?: string;
   data: ChartData[];
   color?: string;
 }
 
 export default function StatusChart({
   title,
+  link,
   data,
   color = "#2563EB",
 }: StatusChartProps) {
   return (
     <div className="rounded-lg border border-slate-200 bg-white p-4 shadow-md">
-
-      {/* Chart Title */}
       <h2
         className="mb-4 text-lg font-semibold"
         style={{ color }}
@@ -81,10 +79,8 @@ export default function StatusChart({
               fontSize={11}
             />
           </Bar>
-
         </BarChart>
       </ResponsiveContainer>
-
     </div>
   );
 }
