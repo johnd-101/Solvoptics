@@ -4,14 +4,10 @@
 import { signIn } from "next-auth/react";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { redirect } from "next/navigation";
 
-export default function LoginPage() {
-  redirect("/dashboard");
-}
 
-/*export default function LoginPage(){
-const router = useRouter(); */
+export default function LoginPage(){
+const router = useRouter(); 
 
 const [email,setEmail] =
 useState("");
